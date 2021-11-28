@@ -55,8 +55,8 @@ struct Triangle{
         self.arrPoints = arrPoints
     }
     mutating func calctriangleArea() -> Double{
-        //(Optional) Notice this optional can be quite hard! Add a function to the Triangle to get the area of the triangle built with three provided points and return the value as a Double. -> have no clue if is correct
-        var area = 0.5 * ((arrPoints[1].y + arrPoints[0].y) * (arrPoints[0].x - arrPoints[1].x)) + 0.5 * ((arrPoints[0].y + arrPoints[2].y) * (arrPoints[2].x - arrPoints[0].x)) - 0.5 * ((arrPoints[1].y + arrPoints[2].y) * (arrPoints[2].x - arrPoints[1].x))
+        //(Optional) Notice this optional can be quite hard! Add a function to the Triangle to get the area of the triangle built with three provided points and return the value as a Double. -> have no clue if it is correct
+        let area = 0.5 * ((arrPoints[1].y + arrPoints[0].y) * (arrPoints[0].x - arrPoints[1].x)) + 0.5 * ((arrPoints[0].y + arrPoints[2].y) * (arrPoints[2].x - arrPoints[0].x)) - 0.5 * ((arrPoints[1].y + arrPoints[2].y) * (arrPoints[2].x - arrPoints[1].x))
         
         return area
     }
